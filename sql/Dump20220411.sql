@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.25, for macos11 (x86_64)
 --
--- Host: localhost    Database: runner_lite
+-- Host: localhost    Database: runnerlite
 -- ------------------------------------------------------
 -- Server version	8.0.25
 
