@@ -60,3 +60,6 @@ info
 qrs
 .jpb
 sql
+*.gz
+.jpb
+sql

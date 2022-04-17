@@ -1,9 +1,22 @@
 package ru.runnerlite.entities;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 import ru.runnerlite.entities.dto.SecUserDto;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 import java.time.Instant;
 
 @Builder
@@ -20,7 +33,7 @@ public class SecUser {
 	@Column(name = "ID", nullable = false)
 	private Long id;
 	
-	@Column(name = "NAME_EMAIL", nullable = false)
+	@Column(name = "LOGIN_EMAIL", nullable = false)
 	private String email;
 	
 	@Column(name = "FULLNAME", nullable = false)
